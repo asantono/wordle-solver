@@ -1,0 +1,165 @@
+.most-likely__list {
+  display: flex;
+  border: 2px solid #f7f7f7;
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 3rem;
+}
+
+.most-likely__list--item {
+  display: flex;
+  width: 50%;
+  padding: 0 3rem;
+  justify-content: space-between;
+  align-items: space-between;
+  padding-bottom: 2rem;
+}
+
+.most-likely__list--item--element {
+  display: flex;
+  /* width: 7.5rem; */
+}
+
+.most-likely__list--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.most-likely__bv-grey {
+  background-color: #505359;
+}
+
+.most-likely__match-list-width {
+  display: flex;
+  width: 240px;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+}
+
+.most-likely__title {
+  padding: 0 3rem;
+}
+
+.most-likely__page-title {
+  display: flex;
+  font-size: 3.5rem;
+  font-weight: 800;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 1.6rem 0;
+}
+
+.most-likely__section--title {
+  display: flex;
+  font-size: 3rem;
+  font-weight: 800;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.most-likely__target-letter--container {
+  display: flex;
+  width: 33rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.most-likely__target-letter--input {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.most-likely__input {
+  display: flex;
+  width: 18rem;
+  height: 3rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.most-likely__label {
+  display: flex;
+  width: 13rem;
+  font-size: 2rem;
+}
+
+.most-likely__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.wordle__green {
+  color: #6aaa65;
+}
+
+.wordle__green--bg {
+  background-color: #6aaa65;
+}
+
+.wordle__grey {
+  color: #787c7f;
+}
+
+.wordle__grey--bg {
+  background-color: #787c7f;
+}
+
+.wordle__gold {
+  color: #cab457;
+}
+
+.wordle__gold--bg {
+  background-color: #cab457;
+}
+
+.color__blue {
+  color: #1e90ff;
+}
+
+.color__blue--hover:hover {
+  color: #87cefa;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.onHover--pointer:hover {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.margin__top--1rem {
+  margin-top: 1rem;
+}
+
+.margin__bottom--1rem {
+  margin-bottom: 1rem;
+}
+
+.margin__bottom--2rem {
+  margin-bottom: 2rem;
+}
