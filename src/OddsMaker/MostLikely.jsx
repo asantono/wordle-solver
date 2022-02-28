@@ -41,30 +41,43 @@ const MostLikely = () => {
   ])
 
   const goldLetterChange = (e, row) => {
-    if (!checkUndercase(e.target.value)) return
+    if (!e.target.value.length) {
+      setGoldLetters({
+        ...goldLetters,
+        [row]: { ...goldLetters[row], [e.target.name]: '' }
+      })
+    }
+    let text = checkUndercase(e.target.value)
+    if (!text) return
     setGoldLetters({
       ...goldLetters,
-      [row]: { ...goldLetters[row], [e.target.name]: e.target.value }
+      [row]: { ...goldLetters[row], [e.target.name]: text }
     })
   }
 
   const targetLetterChange = (e) => {
-    if (!checkUndercase(e.target.value)) return
-    setKnownLetters({ ...knownLetters, [e.target.name]: e.target.value })
+    if (!e.target.value.length) {
+      setKnownLetters({ ...knownLetters, [e.target.name]: '' })
+      return
+    }
+    let text = checkUndercase(e.target.value)
+    if (!text) return
+    setKnownLetters({ ...knownLetters, [e.target.name]: text })
   }
 
   const checkUndercase = (text) => {
-    if (!text) return true
-    let re = new RegExp('^[a-z]*$')
-    if (re.test(text)) return true
+    let re = new RegExp('^[A-Za-z]*$')
+    if (re.test(text)) return text.toLowerCase()
     else return false
   }
 
   const usedLetterChange = (e) => {
-    if (!checkUndercase(e.target.value)) return
-    setUsedLettersString(e.target.value)
+    if (!e.target.value.length) return setUsedLettersString('')
+    let text = checkUndercase(e.target.value)
+    if (!text) return
+    setUsedLettersString(text)
     let objMaker = {},
-      splitVal = e.target.value.split('')
+      splitVal = text.split('')
     splitVal.forEach((element) => {
       let trimmed = element.trim()
       if (trimmed.length === 1 && !objMaker[trimmed]) {
