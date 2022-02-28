@@ -1,8 +1,8 @@
-import MostLikely from "./OddsMaker/MostLikely";
-import "./reset.css";
+import MostLikely from './OddsMaker/MostLikely'
+import './reset.css'
 
 function App() {
-  return <MostLikely />;
+  return <MostLikely />
 }
 
-export default App;
+export default App
