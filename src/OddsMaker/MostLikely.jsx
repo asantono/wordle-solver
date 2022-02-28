@@ -276,7 +276,7 @@ const MostLikely = () => {
 
   return (
     <div>
-      <div className="most-likely__page-title">Wordle Solver!</div>
+      <div className="most-likely__page-title">Wordle Buddy!</div>
       <div className="most-likely__center margin__bottom--2rem">
         <label className="most-likely__label bold" htmlFor="usedLetters">
           Grey Letters
