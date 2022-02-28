@@ -291,14 +291,6 @@ const MostLikely = () => {
           onChange={(e) => usedLetterChange(e)}
         ></input>
       </div>
-      {/* <div className="most-likely__center margin__bottom--2rem">
-        <label className="most-likely__label"  htmlFor="foundLetters">Good Letters <span className="wordle__gold">(Gold)</span></label>
-<input className="most-likely__input"  type="text" id="foundLetters" placeholder="etzba"
-    onChange={(e) => foundLetterChange(e)}
-    value={foundLettersString}
->
-</input>
-</div> */}
 
       <div className="most-likely__center margin__bottom--2rem ">
         <div>
@@ -306,7 +298,6 @@ const MostLikely = () => {
             Gold Letter Positions
           </div>
           <div className="most-likely__target-letter--container margin__bottom--1rem">
-            {/* <label htmlFor="letterOne"><span className="wordle__green">Green</span> Letter 1</label> */}
             <input
               className="most-likely__target-letter--input wordle__gold--bg"
               type="text"
@@ -316,7 +307,6 @@ const MostLikely = () => {
               value={goldLetters.one['one']}
               maxLength={1}
             ></input>
-            {/* <label htmlFor="letterTwo">Green Letter 2</label> */}
             <input
               className="most-likely__target-letter--input wordle__gold--bg"
               type="text"
@@ -326,7 +316,6 @@ const MostLikely = () => {
               value={goldLetters.one['two']}
               maxLength={1}
             ></input>
-            {/* <label htmlFor="letterThree">Green Letter 3</label> */}
             <input
               className="most-likely__target-letter--input wordle__gold--bg"
               type="text"
@@ -336,7 +325,6 @@ const MostLikely = () => {
               value={goldLetters.one['three']}
               maxLength={1}
             ></input>
-            {/* <label htmlFor="letterFour">Green Letter 4</label> */}
             <input
               className="most-likely__target-letter--input wordle__gold--bg"
               type="text"
@@ -346,7 +334,6 @@ const MostLikely = () => {
               value={goldLetters.one['four']}
               maxLength={1}
             ></input>
-            {/* <label htmlFor="letterFive">Green Letter 5</label> */}
             <input
               className="most-likely__target-letter--input wordle__gold--bg"
               type="text"
