@@ -119,7 +119,7 @@ const MostLikely = () => {
     // ** First Double Loop quadratic time
     let goldKeys = Object.keys(goldLetters),
       tempGold = [],
-      foundGold = false
+      foundGold = true
     for (let v = 0; v < goldKeys.length; v++) {
       for (let g = 0; g < goldKeys.length; g++) {
         if (goldLetters[goldKeys[v]][goldKeys[g]])
@@ -190,16 +190,14 @@ const MostLikely = () => {
         ) {
           // ** This is only the second loop due to the
           // ** long code above
-          for (let w = 0; w < wordListTemp[q].length; w++) {
-            if (tempGold.includes(wordListTemp[q][w])) {
-              foundGold = true
-            }
-            if (w === wordListTemp[q].length - 1 && foundGold) {
-              wordList.push(wordListTemp[q])
-            }
+          for (let w = 0; w < tempGold.length; w++) {
+            if (!wordListTemp[q].includes(tempGold[w])) foundGold = false
+          }
+          if (foundGold) {
+            wordList.push(wordListTemp[q])
           }
         }
-        foundGold = false
+        foundGold = true
       }
       wordListTemp = [...wordList]
       wordList = []
