@@ -72,9 +72,8 @@ const MostLikely = () => {
   }
 
   const usedLetterChange = (e) => {
-    if (!e.target.value.length) return setUsedLettersString('')
     let text = checkUndercase(e.target.value)
-    if (!text) return
+    if (!text) text = ''
     setUsedLettersString(text)
     let objMaker = {},
       splitVal = text.split('')
